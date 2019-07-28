@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        /*
+        O BOM é uma API para manipulação de dados do browser
+        Diferente do DOM que é para minipulação de informações da pagina. O BOM trabalha com ferramentas do navegador
+        Como: Janela, Historico de navegação, resolução da tela e etc.
+        */
+
+        // Um exemplo simples pe utilizando o metodo open e close do objeto window
+
+        // Na primeira função utilizamos o open para abrir um pop-up
+
+        var janela
+
+        function onpenWindow() {
+            janela = window.open('http://www.google.com.br', 'Nova Aba', 'width=300, heighti=300')
+            // Algumas informações podem ser inseridas para como ('site que deseja abrir', 'nome', 'tamanho')
+        }
+
+        // Agora utilizando o close, podemos fechar aquela janela que abrimos.
+        function closeWindow() {
+            janela.close()
+            // Observe que geramos uma variavel com a janela aberta para criar uma referencia dela.
+            // Por fim utilizamos ela como obejto para nosso metodo close
+        }
+
+        // Outro Exemplo simples é o metodo print, onde iniciamos o processo para impressão da pagina
+        function windowPrint() {
+            window.print()
+        }
+
+    
+    </script>
+</head>
+<body>
+
+    <button onclick="onpenWindow()">Gerar Janela</button>
+    <button onclick="closeWindow()">Fechar Janela</button>
+    <button onclick="windowPrint()">Imprir</button>
+    
+</body>
+</html>

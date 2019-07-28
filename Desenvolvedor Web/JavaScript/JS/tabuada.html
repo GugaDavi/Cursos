@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tabuada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <h3>Digite um número para descobrir sua tabuada:</h3>
+    <input id="caixa" type="text" placeholder="Digite um número">
+    <span> 
+        <button onclick="gerar()">Gerar</button>
+    </span>
+    <script>
+
+        function gerar() {
+            var num = parseInt(document.getElementById('caixa').value)
+            var y = 1
+            for (num; y <= 10; y += 1) {
+                console.log(num + ' X ' + y + ' = ' + (num * y))
+            }
+            y = 1
+        }
+     
+    </script>
+
+</body>
+</html>

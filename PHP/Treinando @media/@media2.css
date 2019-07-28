@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#topo {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #ffa500;
+}
+#conteudo {
+    margin: auto;
+}
+.texto {
+    width: 25%;
+    margin-top: 10px;
+    float: left;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+
+    .texto {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .texto {
+        width: 100%;
+        float: left;
+    }
+}

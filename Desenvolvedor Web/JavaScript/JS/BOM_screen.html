@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        /*
+        Com o metodo Screen do objeto Window, conseguimos trabalhar com as dimensões da tela
+        Fazendo com que tanto nos informe quais valores de width e height que no momento
+        */
+
+        var width = window.screen.availWidth
+        var heigth = window.screen.availHeight
+
+        document.write('A altura do munitor é de ' + heigth + 'px <br>')
+        document.write('A largura do monitor é de ' + width + 'px <br>')
+
+        // O availWidth e availHeight serve para medir a resolução da tela de exibição como um todo, mesmo que a janela esteja reduzida
+
+        // Para fazer um metodo responsivo podemos fazer com condicionais:
+
+        if (width < 500) {
+            document.write('Aplicação para Mobile')
+        } else {
+            document.write('Aplicação para Web')
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

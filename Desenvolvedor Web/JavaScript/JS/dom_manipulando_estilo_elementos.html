@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manipulando Estilos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // 3º Nessa função é onde é feita a mudança no stylo
+        function modificarEstilo(corDeFundo) {
+            document.getElementById('quadrado').style.background = corDeFundo
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>Manipulando Estilos</h3>
+    <!-- 1º Inserido as opções das cores-->
+    <button type="button" onclick="modificarEstilo('red')">Vermelho</button>
+    <button type="button" onclick="modificarEstilo('yellow')">Amarelo</button>
+    <button type="button" onclick="modificarEstilo('green')">Verde</button>
+
+    <hr>
+    <!-- 2º Fazemos o espaço onde será feito as alterações / insderindo o id que será utilizado na função-->
+    <div style="border: 1px solid red; width: 100px; height: 100px" id="quadrado"></div>
+
+</body>
+</html>

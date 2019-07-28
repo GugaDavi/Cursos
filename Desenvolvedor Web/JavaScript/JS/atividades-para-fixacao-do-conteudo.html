@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade de Fixação</title>
+	<meta charset="utf-8">
+	<script>
+
+		var idade = prompt('Digite a sua idade:')
+
+		idade = parseInt(idade)
+		console.log(idade)
+
+		document.write('A idade digitada foi: ' + idade + '<br>')
+
+		if (idade < 15) {
+			document.write('Com essa idade você é Criança')
+		}
+		else if (idade >= 15 && idade < 30){
+			document.write('Com essa idade você é Jovem')
+		}
+		else if (idade >= 30 && idade < 60){
+			document.write('Com essa idade você é Adulto')
+		}
+		else if (idade >= 60){
+			document.write('Com essa idade você é Idoso')
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

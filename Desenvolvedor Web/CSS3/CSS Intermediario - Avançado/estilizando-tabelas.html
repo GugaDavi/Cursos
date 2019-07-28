@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Estilizando Tabelas</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				width: 500px;
+				margin: 5px auto;
+			}
+			table{
+				width: 500px;
+				border-collapse: collapse;
+			}
+			th{
+				text-align: left;
+				border-bottom: 1px solid #CCC;
+			}
+			th, td{
+				padding: 7px;
+			}
+			tr:hover{
+				background-color: #c3e6e5;
+			}
+			.valor{
+				text-align: right;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h2>Estilizando Tabelas</h2>
+		<table>
+			<hr>
+			<tr>
+				<th>Codigo</th>
+				<th>Produto</th>
+				<th class="valor">Preço</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>NoteBook</td>
+				<td class="valor">R$ 2.500,00</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Tablet</td>
+				<td class="valor">R$ 1.500,00</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>iPhone</td>
+				<td class="valor">R$ 3.500,00</td>
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>Nexus</td>
+				<td class="valor">R$ 3.500,00</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

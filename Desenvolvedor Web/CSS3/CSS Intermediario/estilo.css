@@ -1,0 +1,29 @@
+/*MODELO DE CAIXA*/
+body{
+	width: 300px;
+}
+.conteudo{
+	border: 1px;
+	border-style: solid;
+	border-color: red;
+	background-color: #f9f9f9;
+	padding: 10px;
+}
+h2{
+	margin: 0px;
+}
+/*
+FORMAS DE CONFIGURAÇÃO PADDING:
+	APLICANDO EM TODOS OS LADOS
+		padding: 10px;
+	APLICANDO EM CADA LADO ESPECIFICO:;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	APLICANDO NAS BORDAS DE CIMA E BAIXO, DIREITA E ESQUERDA:
+		padding: 10px 5px; 
+O COMAND MARGIN FUNCIONA DO MESMO JEITO, CONTUDO COM UMA SINGULARIDADE
+QUANDO AS MARGENS DE DUAS CAIXAS SE ENCONTRA, O VALOR DA MARGEM QUE SERÁ APLICADO
+SERÁ O DÁ MAIOR.
+*/

@@ -1,0 +1,232 @@
+<!--
+
+O BootStrap é uma ferramente para automatizar a produção de site estilizados e com responsividade
+O primeiro passo é fazer a inserção dos arquivos necessarios:
+
+    bootstrap.min.css;
+    jquery.min.js;
+    bootstrap.min.js;
+
+Inseridos nessa sequencia, o primeiro com o "link" e os demais com o "script".
+
+Ele já vem todo otimizado precisando somente que você utilize as classes nativas dele.
+
+Exemplos:
+
+class="x" // Onde "x" pode ser:
+
+    container = Irá padronizar o que for escrito dentro dela, quanto a tamanho e margens;
+    container-fluid = Dá responsividade, mas não limita margens;
+    row = Cria uma tabela com no maximo 12 colunas. Na criação das colunas os tamanhos terão 
+        que ter no maximo 12;
+        Na declaração da coluna fazemos:
+        col-x-y = Onde:
+            O "x" é até quando a caracteristica será mantida:
+                lg = Para grandes munitores;
+                md = Para monitores "normais";
+                sm = Até largura de tablets;
+                xs = Até largura de celulares;
+            y é quanto irá ocupar dos 12 espaços disponiveis;
+
+    // Para Tabelas
+
+        table = Organiza as tabelas;
+        table-striped = Coroli as linhas das tabelas de forma alternada;
+            Para separar o topo da tabela com os dados usamos o: thead com o topo dentro dele;
+            Para o corpo usamos: tbody com os dados;
+        table-bordered = Coloca bordas na tabela;
+        table-hover = Quando passado o mouse sobre o dado a linha ganha destaque;
+        table-condensed = Diminui as margens;
+        active = Deixa linha marcada;
+        success = Deixa linha verde;
+        danger = Deixa linha vermelha;
+        warning = Deixa linha amarela;
+
+    // Para Imagens:
+
+        img-responsive = Imagem responsiva;
+        img-rounded = Imagem com pontas arredondadas;
+        img-circle = Transforma a imagem em um circulo;
+        img-thumbnail = Cria uma borda na imagem com um espaçamento interno;
+
+    // Para Butões:
+
+        btn = Dá um estilo ao botão;
+        btn-success = Butão verde;
+        btn-danger = Butão vermelho;
+        btn-info = Butão Azul Escuro;
+        btn-primary = Azul Claro;
+        btn-default = Butão basico;
+        btn-x = Para alterar o tamanho do botão
+            lg = Para grandes munitores;
+            md = Para monitores "normais";
+            sm = Até largura de tablets;
+            xs = Até largura de celulares;
+        btn-block = Ocupará todo espaço disponivel e ficará responsivo;
+        disabled = Desabilita o botão;
+        btn-link = Irá ter a aparencia de um link;
+        btn-group = Cria um grupo de botões;
+        btn-group-justified = Cria um grupo responsivo ocupando todo espaço disponivel;
+            // Só funciona com links (a);
+        btn-group-vertical = Cria um grupo de botões na vertical;
+        dropdown = Usado dentro de uma "div" que receberá o botão com seus menus:
+            O botão tem que conter as seguintes classes:
+                btn; // Estilizar o botão;
+                btn-primary // Cor do Botão;
+                dropdown-toggle
+            E por ultimo uma:
+                data-toggle="dropdown";
+            Para inserir a setinha que aparece no lado:
+                <span class="caret"></span>
+            Inserir as opções: Com uma lista desordenada;
+                Na <ul> inserimos a classe:
+                    dropdown-menu;
+                As <li> inserimos links nela;
+            Caso desejamos fazer divisões nas opções:
+            Inserimos uma classe em uma <li> vazia:
+                divider; // Irá criar uma linha separadora;
+            Para inserirmos um cabeçalho nos blocos de opções inserimos uma classe:
+                dropdown-header
+            Para desabilitar um botão:
+                disable;
+        jumbotron = Usado para dar destaque a determinada parte do texto, responsivo;
+        Sinão de notificações, como no celular que mostra quantas msgs tem não lidas:
+            <span class="badge">x</span>;
+            No local de "x" será o número das notificações;
+        Mensagem de aviso, como quando criamos uma nova funcionalidade:
+            <span class="lable">mensagem</span>
+        data-toggle="collapse" // Dá propriedade a um botão para exibir ou não algo;
+        data-target="x" // "x" nome do elemento que sofrerá a ação;
+        class="collapse" // Inserida no elemento; Para a informação aparecer quando clicado no botão;
+        collapse in // Para pagina inicar com a msg aberta e clicando no botão sumir;
+    
+    // Caixa de Alerta:
+
+        alert = Cria uma caixa com uma mensagem;
+        alert-x:
+            x pode ser:
+                active = Alerta Marcada;
+                success = Alerta verde;
+                danger = Alerta vermelha;
+                warning = Alerta amarela;
+        data-desmiss="alert" // Determina quem sofrerá a ação;
+        aria-label="close" // Determina qual a ação;
+        E dentro do link inserimos o sibulo que será utilizado:
+            &times; // Simbolo do "x";
+        
+    // Peineis:
+
+        panel // Determina que dentro dele será feito um painel;
+        panel-heading // Nome do meu painel;
+        panel-body // Conteudo;
+
+    // Para listas:
+
+        list-group // Determina que dentro daquele escopo serão itens de uma lista;
+        list-gruop-item // Item da lista;
+
+    // Para Abas:
+                
+        nav // Determina que haverá navegação nos itens
+        nav-tabs // Definição do tipo - Abas;
+        data-toggle="tab" // Linka as opções para não ficarem ativas ao mesmo tempo;
+        tab-content // Espaço onde será colocado os conteudos de cada aba;
+        tab-pane // Aerea do conteudo;
+            É usado para linkar uma tag "a" onde no href declaramos o id do seu conteudo;
+            E no campo id="" de cada conteudo usamos o mesmo id declarado na tag "a";
+        fade // Transição mais suave entre as abas;
+
+    // Para Paginas:
+
+        pagination // Usado para derminar que uma lista "ul" é correspondente a uma serie de paginas;
+        active // Marca a pagina que o usuario está no momento;
+        pager // Para botens de anterior e proximo;
+        previous // Para o botão de voltar;
+        next // Para o botão de proximo;
+
+    // Para menus superiores:
+
+        navbar // Detemina que aquela região é de um menu superior;
+        navbar-inverse // Inverte as cores da barra;
+        navbar-header // Geralmente usado para colocar a marca;
+        navbar-brand // Logo do site;
+        Em uma lista "ul":
+        nav navbar-nav // Usada para determinar os links dos menus;
+        navbar-right // Desloca o meno para a direita;
+        navbar-fixed-top // Fixa a barra no topo da pagina;
+        navbar-fixed-bottom // Para fixar na parte inferior;
+    
+    // Para formularios:
+
+        form-control // Estiliza campos dos formularios;
+        form-group // Estiliza bloco do formulario;
+    
+    // Para Light Box:
+        
+        data-toggle="modal" // Define que aquele elemento irá abrir uma light box;
+        data-target="#janela" // Determina qual bloco com o id informado será aberto;
+        modal // Para a parte que será aberta;
+        role="dialog" // Para fazer as transições de abrir e fechar;
+        modal-dialog // Uma div onde irá conter os dados;
+        modal-content // div dentro da criada acima;
+        modal-header // Cabeçalho da nossa light box;
+            Dentro desse cabeçalho podemos inserir um botação para fechar:
+            <button class="close" data-dismiss="modal">&times;</button> // Botão "X" para fechar;
+        modal-title // Titulo da light box;
+        modal-body // Corpo da light box;
+        modal-footer // Rodapé da nossa aplicação;
+        
+
+            
+
+Editores de texto:
+
+    <small>Deixa a letra reduzida, como um subtitulo</small>
+    <mark>Marca o texto</mark>
+    <abbr title="Significado">Quando passado o mouse sobre a marcação aparecerá o significado</abbr>
+    <blockquote> // Cria uma caixa com a sitação e o autor abaixo;
+        Usado para citação
+        <footer>Autor</footer>
+    </blockquote>
+    <blockquote class="blockquote-reverse">
+        Faz a mesma coisa que acima, só que do lado direito;
+    </blockquote>
+    <dl> // Cria uma lista estilizada
+        <dt><dt/> // Item
+        <dd></dd> // Descrição do Item;
+    </dl>
+    <code>Codigo</code> // Estilo para citação de codigo;
+    <kbd>Comando</kbd> // Estilo para comando (Crtl + C)
+    
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Testando o BootStrap</h1>
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá 
+            sua turmis! Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! 
+            Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Praesent 
+            malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+        </p>
+        <hr>
+
+        <button class="btn btn-default">Enviar</button>
+
+        <hr>
+              
+    </div>
+</body>
+</html>

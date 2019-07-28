@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 1000px;
+    background-color: red;
+    margin: auto;
+}
+#topo {
+    width: 1000px;
+    height: 150px;
+}
+#logo_topo {
+    width: 500px;
+    height: 150px;
+    background-color: blue;
+    float: left;
+}
+#menu {
+    width: 500px;
+    height: 150px;
+    background-color: yellow;
+    float: right;
+}
+#corpo {
+    height: 400px;
+    background-color: brown;
+}
+#rodape {
+    height: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #menu {
+        background-color: silver;
+    }
+    #logo_topo {
+        background-color: red;
+    }
+    #menu {
+        background-color: black;
+    }
+    #corpo {
+        background-color: purple;
+    }
+    #rodape {
+        background-color: green;
+    }
+
+}

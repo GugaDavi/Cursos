@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<a href="file:///G:/Cursos/Projeto%20Web/1º%20Projeto/Formularios.html">
+		Home
+	</a>
+	<h1>Pagina de Cadastro</h1>
+	<form>
+		Digite seu Login: 
+		<input type="text" name="login"><br>
+		Digite sua Senha: 
+		<input type="password" name="senha">
+		<hr>
+		Sexo:<br>
+		<input type="radio" name="sexo" value="M"> Masculino<br>
+		<input type="radio" name="sexo" value="F"> Feminino<br>
+		<input type="radio" name="sexo" value="O"> Outros
+		<hr>
+		Interesses:<br>
+		Cursos:<br>
+		TI:
+		<ul type="circle">
+			<li><input type="checkbox" name="interesses">Desenvolvimento Web</li>
+			<li><input type="checkbox" name="interesses">Linguagens de Programação</li>
+			<li><input type="checkbox" name="interesses">Banco de Dados</li>
+			<li><input type="checkbox" name="interesses">Desenvolvedor Android</li>
+			<li><input type="checkbox" name="interesses">Produção de videos</li>
+		</ul>
+		Finanças:
+		<ul type="circle">
+			<li><input type="checkbox" name="interesses">A vista X Financiado</li>
+			<li><input type="checkbox" name="interesses">Independencia Financeira</li>
+			<li><input type="checkbox" name="interesses">Aposentadora X Empreendedorismo</li>
+			<li><input type="checkbox" name="interesses">Como Investir Bem</li>
+		</ul>
+		<hr>
+		Localidade: 
+			<select name="estado">
+				<option value="ac">AC</option>
+				<option value="al">AL</option>
+				<option value="am">AM</option>
+				<option value="sp">SP</option>
+				<option value="ma">MA</option>
+			</select>
+		<hr>
+		Observações:<br>
+			<textarea>
+				
+			</textarea><br>
+		<input type="submit" name="ficha" value="Cadastrar">
+	</form>
+</body>
+</html>

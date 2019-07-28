@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        /* Criamos as classes para alteração */        
+        .estilo1 {
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+
+        .estilo2 {
+            background-color: blueviolet;
+            color: red;
+            width: 200px;
+            height: 200px;
+            font-size: 2em;
+        }
+
+    </style>
+    <script>
+
+        // Por fim, a função que fará a alteração
+        function mudarClasse() {
+            //Usando a função do elemento 'document'; selecionando o id ('entre aspas'); className = nome da classe como str
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- 1º Criamos dois elementos o que será modificado e o gatilho modificador -->
+    <div id="mensagem" class="estilo1">Modificando Classes</div>
+    <hr>
+    <button type="button" onclick="mudarClasse()">Aplicar Alteração</button>
+</body>
+</html>

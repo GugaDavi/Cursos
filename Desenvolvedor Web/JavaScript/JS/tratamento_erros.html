@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+        /*
+        As ferramentas para trativas de erros vão desdo bloco de codigos para testar, concersar e respoder a algum erro que aconteça
+        Os utiizandos no JS são: try / catch / finally / 
+            try - Você insere o codigo que possivelvemente pode retornar com o erro - try {}
+            catch - Caso você tenha feito um teste e deu erro, com o catch você cria comandos para "inibir" o erro - catch (e) {}
+            finally - Da um retorno depois de uma tentativa ou conserto de um erro - finally {}
+        */
+        
+        var video = []
+        video[0] = []
+        video[0]['nome'] = 'Naruto'
+
+        function getVideo () {
+            console.log(video[1])
+            // Neste caso a função não da erro, ela diz que não encontrou o que foi solicitado
+            console.log(video[1]['nome'])
+            // Neste segundo caso sim, o erro irá acontecer pois você está fazendo uma consulta de em algo que não existe
+            try {
+                // Dai utilizando o try testamos se a solicitação irá gerar um erro
+                console.log(video[1]['nome'])
+                // Com essa tentativa podemos trata-la com catch e finally
+            } catch (e) /*(variavel que receberá o erro)*/{
+                console.log('Erro tratado')
+            } finally {
+                console.log('Com ou sem trativa de erro teremos um finally')
+            }
+            
+        }
+        
+        getVideo()
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Funções Callback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+
+        // Basicamente o callback é para definir uma forma de exibição para sucesso e para erro.
+        
+        function exibirArtigo(id, callbackSucesso, callbackErro){
+            if (false){
+                callbackSucesso ('Funções de Callback em JS', 'Funções de callback são utilizadas com frequencia no JS, chatinhas.')
+            } else {
+                callbackErro ('Erro ao recuperar os dados!')
+            }
+        }
+
+        var callbackSucesso = function (titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr>')
+            document.write('<p>' + descricao + '</p>')
+        }
+        var callbackErro = function (erro){
+            document.write('<p><strong>Erro:</strong> ' + erro + '</p>')
+        }
+
+        /* Na hora de chamar a função abaixo, não utilizar "()", pois inserindo os "()" o JS ira executar
+        a função callbackSucesso inves da variavel acima criada. */
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

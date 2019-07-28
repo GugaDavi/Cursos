@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        // Na função timing é feita uma ação de depois de um certo periodo de tempo.
+        // setTimeout (<ação que será executada>, <tempo em milissegundo que a ação será executada>) - Uma vez
+        // setInterval (<ação que será executada>, <tempo em milissegundo que a ação será executada>) - Toda vez
+
+        // Observe que no setTimeout abaixo fazemos uma função ser escrita na tela depois de 2s da inicialização da pagina
+        setTimeout(
+            function () {
+                document.write('teste <br>')
+            }, 2000)
+
+        var i = 5
+
+        var x = setInterval(
+            function () {
+                document.write(i + '<br>'); i -= 1
+                if (i == 0) {
+                    alert('Seção expirada!!')
+                    clearInterval(x)
+                    // O metodo clearInterval ou clearTimeout são para interrromper a contagem em algum momento.
+                    window.location.reload()
+                }
+            }, 1000)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

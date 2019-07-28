@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+    <script>
+    
+        function aplicarFundo() {
+            document.getElementById('caixa').style.backgroundColor = 'yellow'
+        }
+
+        function validarCaracter() {
+            var campo = document.getElementById('caixa').value
+            if (campo.length <= 3) {
+                document.getElementById('caixa').style.backgroundColor = 'red'
+            } else {
+                document.getElementById('caixa').style.backgroundColor = 'green'
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <input id="caixa" type="text" placeholder="Digite algo" onfocus="aplicarFundo()" onblur="validarCaracter()">
+    </div>
+</body>
+</html>

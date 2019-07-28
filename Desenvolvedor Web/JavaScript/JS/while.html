@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>While</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        //A função while é basicamento igual a do Python
+
+        //chama a função (condicional) {Execuções}
+
+        var x = 1
+
+        document.write('Inicio: <br>')
+        while (x <= 10) {
+            document.write(x + '<br>')
+            x += 1
+            // Aqui também temos a função breack que para o laço assim que encontrada
+            if (x === 5) {
+                // Existe também a função continue, onde caso seja encontrada o laço é parado ali e recomeçado. Qualquer função após é desconsiderada
+                break
+            }
+        }
+        document.write('Fim <br>')
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+        var lista_frutas = ['Maça', 'Uva', 'Pera', 'Morango', 'Banana']
+
+        console.log(lista_frutas)
+        // .sort para ordenar a lista
+        console.log(lista_frutas.sort())
+
+        // Caso a ordenação seja feita em uma lista com números, é necessario "Incinar" ao metodo sort como fazer
+
+        // Nessa função o sort irá testa número a número, e ordenando conforme comentario da função
+        function ordenarNum(a, b) {
+            return a - b
+            // < 0 = a ordenado antes de b
+            // > 0 = a ordenado depois de b
+            // == a ordem mantida
+        } 
+
+        var lista_numeros = [1, 3, 4, 6, 9, 10, 0]
+
+        // Nesse momento a função não leva (), pois dessa forma a função será executada a cada comparação, não uma unica vez
+        console.log(lista_numeros.sort(ordenarNum))
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

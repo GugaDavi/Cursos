@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+</head>
+<body>
+
+    <input id="caixa" type="text" placeholder="Lista de Objetos">
+    <span>
+        <button onclick="verificar()">Adicionar</button>   
+        <button onclick="ordenar()">Ordenar</button>
+    </span>
+    <script>
+        
+        var objeto = ['Cadeira', 'Impressora', 'Garfo']
+
+        function verificar() {
+            if (document.getElementById('caixa').value == '') {
+                alert('Digite um valor valido')
+                document.getElementById('caixa').value = ''
+            } else {
+                var item = document.getElemsentById('caixa').value
+                if (objeto.indexOf(item) != -1) {
+                    alert('O objeto já existe na lista')
+                    document.getElementById('caixa').value = ''
+                } else {
+                    objeto.push(item)
+                    alert('O obejto ' +item+ ' foi adicionado com sucesso')
+                    console.log(objeto)
+                    document.getElementById('caixa').value = ''
+                }
+            }
+        }
+
+        function ordenar() {
+            console.log(objeto.sort())
+        }
+    </script>
+    
+</body>
+</html>

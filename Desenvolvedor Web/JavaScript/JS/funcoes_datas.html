@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Funções com Datas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+        var data = new Date()
+
+        /* 
+        A função Date tem como parametro a data do Browser, que por sua vez solicita a informação do OS,
+        contudo, caso o usuario tenha alterado essas informações manualmente, a data considerada será a 
+        alterada
+        */
+
+        // Comandos .get obtem informações da data atual
+
+        // .getDate - Pega o dia do mes
+        document.write(data.getDate() + '/')
+        // .getMoth - Pega o mês do ano de 0 a 11 (JAN a DEC)
+        document.write(data.getMonth() + '/')
+        // .getFullYear - Pega o ano
+        document.write(data.getFullYear() + '<br>')
+        document.write('<hr>')
+        // Se utilizarmos o comando toString na data, ela irá mostrar a data por extenso
+        document.write(data.toString(data))
+        document.write('<hr>')
+        
+        // Comandos .set tratam os dados extraidos da data para modifica-los
+
+        // .setDate - Modifica o dia
+        data.setDate(data.getDate() + 1)
+        document.write(data.toString(data) + '<br>')
+        // .setMonth - Modifica o mês
+        data.setMonth(data.getMonth() + 1)
+        document.write(data.toString(data) + '<br>')
+        // .setFullYear - Modifica o ano
+        data.setFullYear(data.getFullYear() + 1)
+        document.write(data.toString(data))
+        document.write('<hr>')
+
+        // Para saber quantos dias exitem entre uma data e outra
+
+        // 1º Escolher as datas:
+
+        // 1º data: 29/08/1993
+        var data1 = new Date(1993, 7, 29)
+        // 2º data: 29/08/3000
+        var data2 = new Date(3000, 7, 29)
+        // Na escolha da data tem que ser respeitado a precedencia: Ano, Mês, Dia, Hora...
+
+        // Para calcular a diferença de dias é usado o tempo em milissegundos entre os dias
+        // O comando que descobre quantos milissingundos tem cada dia é o .getTime()
+
+        document.write(data1.getTime() + '<br>')
+        document.write(data2.getTime() + '<br>')
+        document.write('<hr>')
+
+        // Depois fazemos a subitração e por fim calculamos os dias
+        // A função Math.abs retorna o valor absoluto do calculo feito, é necessario usa-la pois não existe dias negativos
+        var milissegundos_entre_dias = Math.abs(data1.getTime() - data2.getTime())
+        document.write(milissegundos_entre_dias + '<br>')
+
+        // Para saber quantos milissigundos existe em um dia o calulo é:
+        // 1 dia tem 24h
+        // 1h tem 60m
+        // 1min tem 60s
+        // 1s tem 1000 milissigundos
+        // Ficando o calculo de um dia:
+        var milissegundos_no_dia = (1*24*60*60*1000)
+        document.write('Um dia tem: ' + milissegundos_no_dia + '<br>')
+
+        var dias_entre_datas = milissegundos_entre_dias / milissegundos_no_dia
+        document.write('A diferença entre as datas é de: ' + dias_entre_datas + ' dias<br>')
+        var dias_em_anos = (dias_entre_datas / 30) / 12
+        document.write('Que dá ' + dias_em_anos + ' anos')
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

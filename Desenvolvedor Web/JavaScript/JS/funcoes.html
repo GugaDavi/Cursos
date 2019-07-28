@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções</title>
+		<meta charset="utf-8">
+		<script>
+			/* Funções é uma operação direcionada para ser utilizada quando os elementos condições forem declarados*/
+
+			var largura = prompt('Digite a largura do terreno:')
+			var comprimento = prompt('Digite o comprimento do terreno')
+
+			var area = calcularAreaTerreno (largura, comprimento)
+
+			/* A declaração de uma variavel em uma funçao tem que seguir a seguintes regras: 1º Utilizar um verbo no infinitivo (calcular, somar, descobrir) 2º Um substantivo começando com letra maiuscula.*/
+			function calcularAreaTerreno (largura, comprimento) {
+				// Dentro da função usa-se uma logica que será processada quando a variavel da função for solicitada
+				var area = largura * comprimento
+				return area
+			}
+
+			document.write('O terreno de ' + largura + 'm por ' + comprimento + 'm tem ' + area + 'm²')
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

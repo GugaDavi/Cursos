@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f3f7;
+}
+#barraTopo {
+    width: 100%;
+    height: 30px;
+    background-color: #2f3033;
+}
+#conteudoTopo {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 30px;
+}
+#menuTopo {
+    float: left;
+    font-size: 0.75em;
+}
+#menuTopo a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s linear;
+    padding: 5px;
+}
+#menuTopo a:hover {
+    background-color: #f51714;
+}
+#menuTopo .ativo {
+    color: blue;
+}
+#linksTopo {
+    height: 30px;
+    float: right;
+}
+#linksTopo input {
+    margin: 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 100%;
+    float: right;
+}
+.buscar {
+    float: right;
+}
+#linksTopo a img {
+    height: 100%;
+    width: 30px;
+}
+#tituloSite {
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+    margin: auto;
+}
+#marca {
+    width: 30%;
+    float: left;
+}
+#marca img {
+    width: 70%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+#anuncioTopo {
+    width: 70%;
+    height: 90px;
+    float: right;
+    background-color: #ff1b23;
+    background: linear-gradient(90deg, #ff1b23, #e31614);
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+#barraMenu {
+    height: 40px;
+    background: linear-gradient(90deg, #ff1b23, #e31614);
+}
+#menu {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#menu li {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#menu li a {
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+}
+#menu li a:hover {
+    background-color: #b41318;
+    transition: all 0.3s linear;
+}
+#container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+}
+#ultimasnoticias {
+    width: 100%;
+    height: 30px;
+    border: 1px solid red;
+}
+#block1 {
+    width: 20%;
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+    color: white;
+    background-color: #ff1b17;
+}
+#block2 {
+    width: 78%;
+    float: right;
+    background-color: white;
+    font-size: 0.9em;
+    line-height: 30px;
+    padding-left: 5px;
+}
+#conteudos {
+    margin-top: 10px;
+}
+#conteudoPrincipal {
+    width: 70%;
+    height: 400px;
+    background-color: red;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+#social {
+    width: 28%;
+    float: right;
+    height: 100px;
+    border: 1px solid silver;
+}
+#tituloSociais {
+    border-bottom: 1px solid silver;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #8d9093;
+    height: 40%;
+    background-color: #f6f7fa;
+    font-size: 1.1em;
+}
+#imgSociais {
+    background-color: white;
+    height: 59%;
+}
+
+#imgSociais img {
+    padding-right: 2px;
+    margin-top: 12px;
+    width: 30px;
+    height: 30px;
+}
+.primeiro {
+    margin-left: 50px;
+}
+#miniUltimasNoticias {
+    width: 28%;
+    float: right;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid silver;
+}
+#tituloMinUltimasNoticias {
+    border-bottom: 1px solid silver;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #8d9093;
+    height: 50px;
+    background-color: #f6f7fa;
+    font-size: 1.1em;
+}
+.preView {
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+#conteudoSecundario {
+    width: 70%;
+    height: 500px;
+    background-color: brown;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+}
+#noticiasSecundarias {
+    border-bottom: 1px solid silver;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #8d9093;
+    height: 40px;
+    background-color: #f6f7fa;
+    font-size: 1.1em;
+}
+#conteudoNoticiasSecundarias {
+    width: 100%;
+    height: 91.7%;
+    background-color: white;
+}
+.borda {
+    border: 1px solid silver;
+    float: left;
+    margin: 5px;
+}
+.principalNotSec img {
+    height: 300px;
+    margin: 3px;
+}
+.borda h3 {
+    padding: 5px; 
+}
+.noticiasMenores {
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: 1px solid red;
+    font-size: 0.7em;
+    word-wrap: break-word;
+    text-align: center;
+}
+.noticiasMenores img {
+    height: 80px;
+    margin-right: 5px; 
+}

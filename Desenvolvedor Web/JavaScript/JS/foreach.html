@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        var listaFuncionarios = ['Gustavo', 'Matheus', 'Herta', 'Marieta', 'Eusebio']
+
+        /* 
+        O forEach é um for (in) so que mais completo, nele você insere uma função com (valor, indice, array)
+        A construção é: array.forEach(function(valor, indice, array)) {logica}:
+            array - O array que você irá usar no forEach
+            .forEach - chamado do metodo
+            (function(valor, indice, array)) - função dentro do forEach, (valor, indice, array) são parametros que podem ser alterados
+                valor - Valor do item do array
+                indicie - Localização do item no array
+                array - Para alterações no array original
+            {logica} - logica que será interpretada no forEach
+        */
+
+        // Ponto interessante!!: toda função fica dentro do forEach
+        // Abre "(" no começo da função
+        listaFuncionarios.forEach(function(valor, indice, array) {
+            console.log(valor + ' - Valor')
+            console.log(indice + ' - Indice')
+            console.log(array)
+        }) // e fecha ")" no fim
+        
+        // Mesmo que as variaves valor, indice e array, sejam alteradas eles seguiram a mesma sequencia original
+        listaFuncionarios.forEach(function(x, y, z) {
+            console.log(x + ' - Valor')
+            console.log(y + ' - Indice')
+            console.log(z)
+        })
+        // Executando o forEach acima, o resultado será o mesmo que a primeira.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Configuração de espaçamento */
+
+#container {
+	margin: auto;
+	width: 1000px;
+}
+#top {
+	height: 40px;
+	background-color: #353535;
+}
+#logo {
+	color: white;
+	float: left;
+	margin-left: 90px;
+	margin-top: 5px;
+	font-size: 1.5em;
+}
+#menu {
+	float: right;
+	color: white;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-right: 110px;
+}
+#baner {
+	height: 300px;
+	background-color: #3479ba;
+}
+#textLeft {
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 100px;
+	height: 180px;
+	float: left;
+	width: 490px;
+}
+#linkBaner {
+	text-decoration: none;
+	margin-top: 30px;
+	margin: auto;
+	display: block;
+	padding: 15px;
+	width: 200px;
+	background-color: #ffc001;
+	border-radius: 15px;
+}
+#imgRight {
+	width: 490px;
+	float: right;
+	height: 290px;
+}
+#conteudo {
+}
+#titulo {
+	height: 40px;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 1.2em;
+}
+#produtos {
+}
+#rodape {
+	height: 40px;
+	background-color: #3479ba;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+/* Classes */
+.linksMenu {
+	color: white;
+	text-decoration: none;
+	padding: 7px;
+}
+.outrosProdutos {
+	margin: 10px;
+}
+a:hover {
+	background-color: #3479ba;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eventos Mouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        
+        function aviso() {
+            alert('Evento disparado')
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- onclick - Serve para dar um retorno quando clicado no local que lhe foi inserido -->
+    <div onclick=aviso() style="background: #ccc; height: 150px; width: 150px"></div>
+    <br>
+    <!-- ondblclick - Serve para dar retorno quando dado o click dublo no local que ele foi inserido -->
+    <div ondblclick=aviso() style="background: #ccc; height: 150px; width: 150px"></div>
+    <br>
+    <!-- onmouseup - Serve para dar retorno quando clicado e segurado no local que ele foi inserido -->
+    <div onmouseup=aviso() style="background: #ccc; height: 150px; width: 150px"></div>
+    <br>
+    <!-- onmouseover - Serve para dar retorno quando o mouse passa no local que ele foi inserido -->
+    <div onmouseover=aviso() style="background: #ccc; height: 150px; width: 150px"></div>
+    <br>
+    <!-- onmouseout - Serve para dar retorno quando o mouse sai do local que ele foi inserido -->
+    <div onmouseout=aviso() style="background: #ccc; height: 150px; width: 150px"></div>
+
+
+</body>
+</html>

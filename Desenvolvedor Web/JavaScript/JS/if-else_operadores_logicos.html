@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>If / Else  - Operadores Logicos</title>
+		<meta charset="utf-8">
+		<script>
+			
+			//"&&" Simboliza o "and" do Python onde o condicional para ser verdadeiros, todos tem que ser verdadeiros.
+
+			if (2 < 3 && 'a' == 'a' && 4 == 4){
+				document.write('Verdadeiro </br>')
+			} else {
+				document.write('Falso </br>')
+			}
+
+			// --------------------
+
+			//"||" Simboliza o "or" do Python, onde o basta um dos condicionais ser verdadeiro para a sentença ser verdadeira.
+
+			if (2 > 3 || 4 > 4){
+				document.write('"Ou" Verdadeiro')
+			} else{
+				document.write('"Ou" Falso')
+			}
+
+			// --------------------
+
+			//"!" Inverte o valor logico de uma sentença.
+
+			if (!(2 > 1)) {
+				document.write('Verdadeiro')
+			} else{
+				document.write('Falso')
+			}
+
+			// No exemplo acima, 2 é maior que 1, mas como seu valor logico foi alterado, a sentença que a principio seria veradeira, passa a ser falsa.
+
+			// ---------------------
+
+			/* 
+			Operadora Ternario: Semelhante ao if/else em na mesma linha do Python, so que esse é bem mais limitado. A estrutura é basicamente: var resultado = <condição> ? <verdadeiro> : <falso>
+			var resultado - Variavel irá armazenar o resultado da condição.
+			<condição> - Condicional que terá resultado verdadeiro ou falto
+			<verdadeiro> e <falso> - O operador ternario é bem limitado ao tipo do resultado que ele armazena. Ele so aprensenta o valor logico, não aplica funções. 
+			Exemplo: Valores aceitos: 'Str'; 'Number' ou var declarada.
+
+			Ele não aceita funções mais complexas como: se for veradadeiro: document.write('Verdadeiro'), neste caso deve-se escrever somente a str 'Verdadeiro'
+			*/
+
+			  var resultado = (nota >= 7 && falta <= falta_maxima) ? 'Aprovado' : 'Reprovado'
+			//variavel declarada = <condição> ? <verdadeiro> : <falso>
+
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
